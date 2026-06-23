@@ -36,10 +36,12 @@
       </div>
       
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Shop</a>
-        <a href="#">Contact</a>
+
+   <router-link to="/">Home</router-link>
+     <router-link to="/about">About</router-link>
+     <router-link to="/shop">Shop</router-link>
+     <router-link to="/contact">Contact</router-link>
+       
       </div>
       
       <div class="nav-icons">
