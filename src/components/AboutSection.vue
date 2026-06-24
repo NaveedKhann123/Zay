@@ -9,7 +9,7 @@
     </div>
 
     <div class="image">
-      <img src="/about-hero.svg" alt="">
+      <img src="/about-hero.svg" alt="About Us Hero">
     </div>
   </div>
 </template>
@@ -22,16 +22,18 @@
   gap: 40px;
   padding: 40px;
   background-color: #59AB6E;
-  height: 480px;
+  
+
+  min-height: 480px; 
 }
 
-/* text side */
+
 .text {
   width: 50%;
   color: white;
 }
 
-/* image side */
+
 .image {
   width: 50%;
 }
@@ -39,6 +41,18 @@
 .image img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  display: block; 
+}
+
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column-reverse; 
+    text-align: center;
+    padding: 20px;
+  }
+  .text, .image {
+    width: 100%; 
+  }
 }
 </style>

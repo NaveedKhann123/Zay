@@ -9,78 +9,78 @@
 
     <div class="product-grid">
 
-      <!-- CARD 1 -->
       <div class="product-card">
-        <img src="/feature_prod_01.jpg" />
+        <img src="/feature_prod_01.jpg" alt="Gym Weight" />
 
-        <div class="rating-row">
-          <div class="stars">
-            <span class="star yellow">★</span>
-            <span class="star yellow">★</span>
-            <span class="star yellow">★</span>
-            <span class="star gray">★</span>
-            <span class="star gray">★</span>
+        <div class="card-body">
+          <div class="rating-row">
+            <div class="stars">
+              <span class="star yellow">★</span>
+              <span class="star yellow">★</span>
+              <span class="star yellow">★</span>
+              <span class="star gray">★</span>
+              <span class="star gray">★</span>
+            </div>
+            <div class="price">$240.00</div>
           </div>
-          <div class="price">$240.00</div>
-        </div>
 
-        <h3 class="product-title">Gym Weight</h3>
-        <p class="product-desc">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
-        </p>
-        <p class="reviews">Reviews (24)</p>
+          <h3 class="product-title">Gym Weight</h3>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+          </p>
+          <p class="reviews">Reviews (24)</p>
+        </div>
       </div>
 
-      <!-- CARD 2 -->
       <div class="product-card">
-        <img src="/feature_prod_02.jpg" />
+        <img src="/feature_prod_02.jpg" alt="Cloud Nike Shoes" />
 
-        <div class="rating-row">
-          <div class="stars">
-            <span class="star yellow">★</span>
-            <span class="star yellow">★</span>
-            <span class="star yellow">★</span>
-            <span class="star gray">★</span>
-            <span class="star gray">★</span>
+        <div class="card-body">
+          <div class="rating-row">
+            <div class="stars">
+              <span class="star yellow">★</span>
+              <span class="star yellow">★</span>
+              <span class="star yellow">★</span>
+              <span class="star gray">★</span>
+              <span class="star gray">★</span>
+            </div>
+            <div class="price">$480.00</div>
           </div>
-          <div class="price">$240.00</div>
-        </div>
 
-        <h3 class="product-title">Cloud Nike Shoes</h3>
-       
-        <p class="product-desc">
-      Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
-        </p>
-         <p class="reviews">Reviews (48)</p>
+          <h3 class="product-title">Cloud Nike Shoes</h3>
+          <p class="product-desc">
+            Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+          </p>
+          <p class="reviews">Reviews (48)</p>
+        </div>
       </div>
 
-      <!-- CARD 3 -->
       <div class="product-card">
-        <img src="/feature_prod_03.jpg" />
+        <img src="/feature_prod_03.jpg" alt="Summer Adidas Shoes" />
 
-        <div class="rating-row">
-          <div class="stars">
-            <span class="star yellow">★</span>
-            <span class="star yellow">★</span>
-            <span class="star yellow">★</span>
-            <span class="star gray">★</span>
-            <span class="star gray">★</span>
+        <div class="card-body">
+          <div class="rating-row">
+            <div class="stars">
+              <span class="star yellow">★</span>
+              <span class="star yellow">★</span>
+              <span class="star yellow">★</span>
+              <span class="star gray">★</span>
+              <span class="star gray">★</span>
+            </div>
+            <div class="price">$360.00</div>
           </div>
-          <div class="price">$240.00</div>
-        </div>
 
-        <h3 class="product-title">Summer Adidas Shoes</h3>
-        
-        <p class="product-desc">
-         Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
-        </p>
-        <p class="reviews">Reviews (74)</p>
+          <h3 class="product-title">Summer Adidas Shoes</h3>
+          <p class="product-desc">
+            Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+          </p>
+          <p class="reviews">Reviews (74)</p>
+        </div>
       </div>
 
     </div>
   </div>
 </template>
-
 
 <style scoped>
 .featured-section {
@@ -92,44 +92,56 @@
 .section-title {
   text-align: center;
   font-size: 32px;
+  font-weight: 300;
   color: #212529;
 }
 
 .section-desc {
   text-align: center;
   margin-top: 10px;
-  color: #555;
+  color: #6c757d;
+  margin-bottom: 30px;
 }
 
 .product-grid {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  margin-top: 40px;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
 }
 
 .product-card {
-  width: 300px;
+  width: 100%;
+  max-width: 360px; /* بڑی اسکرین پر کارڈز کو زے شاپ جتنا چوڑا لک دینے کے لیے */
   background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .rating-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .stars {
@@ -142,7 +154,7 @@
 }
 
 .yellow {
-  color: #fbc02d;
+  color: #ffc107;
 }
 
 .gray {
@@ -150,22 +162,62 @@
 }
 
 .price {
-  font-weight: bold;
-  color: #212529;
-}
-
-.product-title {
-  margin-top: 10px;
+  font-weight: 600;
+  color: #6c757d;
   font-size: 18px;
 }
 
+.product-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
 .product-desc {
-  font-size: 14px;
-  color: #666;
+  font-size: 15px;
+  color: #495057;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
 }
 
 .reviews {
-  font-size: 13px;
-  color: #888;
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+
+@media (max-width: 991px) {
+  .product-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    max-width: 320px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 340px; 
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .section-desc {
+    font-size: 14px;
+  }
 }
 </style>

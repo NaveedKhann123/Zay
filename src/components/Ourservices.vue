@@ -31,23 +31,20 @@ onMounted(() => {
 })
 </script>
 
-
-
 <style scoped>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
 /* ── Card Container ── */
 .service-card {
-
-  
   border-radius: 2rem;
   padding: 2.5rem 2rem;
   max-width: 1100px;
   margin: 2rem auto;
-
   transition: all 0.3s ease;
   background-color: #FFFFFF;
 }
 
-/* ── Grid Layout ── */
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -55,7 +52,6 @@ onMounted(() => {
   align-items: stretch;
 }
 
-/* ── Individual Service Items ── */
 .service-item {
   display: flex;
   flex-direction: column;
@@ -63,51 +59,72 @@ onMounted(() => {
   justify-content: center;
   text-align: center;
   padding: 1.8rem 1rem;
-  /* border-radius: 1.5rem; */
+  border-radius: 1.5rem; 
   cursor: default;
-  min-height: 160px;
- box-shadow: 0 16px 30px -12px rgba(0, 40, 60, 0.15);
+  min-height: 180px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 40, 60, 0.05);
+  transition: all 0.3s ease;
 }
+
+
+.service-title {
+  font-size: 1.1rem;
+  color: #212529;
+  margin-bottom: 0.25rem;
+  font-family: sans-serif;
+  transition: color 0.3s ease;
+}
+
+.service-sub {
+  font-size: 0.85rem;
+  color: #6c757d;
+  font-family: sans-serif;
+  transition: color 0.3s ease;
+}
+
 
 .service-item:hover {
   transform: translateY(-6px);
   background: #69BB7E;
-  box-shadow: 0 16px 30px -12px rgba(0, 40, 60, 0.15);
-  border-color: rgba(255, 255, 255, 0.9);
-  color: white;
+  box-shadow: 0 16px 30px rgba(105, 187, 126, 0.3);
 }
 
-/* ── Icon ── */
-.icon-wrap {
-  font-size: 40px;
-  color: green;
 
+.service-item:hover .service-title,
+.service-item:hover .service-sub {
+  color: #ffffff;
+}
+
+
+.icon-wrap {
+  width: 70px; 
+  height: 70px; 
+  font-size: 32px;
+  color: #69BB7E; 
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(30, 58, 95, 0.06);
-  margin-bottom: 0.75rem;
-  transition: all 0.25s ease;
+  background: rgba(105, 187, 126, 0.1);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
   flex-shrink: 0;
 }
 
 .service-item:hover .icon-wrap {
-  background: #69BB7E;
-  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   transform: scale(1.05);
 }
 
 
 
-
-/* ── Responsive ── */
-
 /* Tablets & small laptops */
 @media (max-width: 820px) {
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.25rem;
   }
 
   .service-card {
@@ -116,14 +133,14 @@ onMounted(() => {
   }
 
   .service-item {
-    padding: 1.4rem 0.8rem;
-    min-height: 140px;
+    padding: 1.5rem 1rem;
+    min-height: 150px;
   }
 
   .icon-wrap {
-    width: 3.6rem;
-    height: 3.6rem;
-    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
   }
 
   .service-title {
@@ -131,65 +148,64 @@ onMounted(() => {
   }
 }
 
-/* Mobile phones */
+
 @media (max-width: 480px) {
   .service-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
+    gap: 0.85rem;
   }
 
   .service-card {
-    padding: 1.2rem 0.8rem;
-    border-radius: 1.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 1.2rem;
     margin: 1rem auto;
   }
 
   .service-item {
-    padding: 1rem 0.4rem;
-    min-height: 120px;
-    border-radius: 1.2rem;
+    padding: 1.2rem 0.5rem;
+    min-height: 130px;
+    border-radius: 1rem;
   }
 
   .icon-wrap {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.6rem;
-    margin-bottom: 0.4rem;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    margin-bottom: 0.5rem;
   }
 
   .service-title {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .service-sub {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 
-/* Very small screens */
+
 @media (max-width: 360px) {
   .service-grid {
-    grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
   }
 
   .service-item {
-    padding: 0.75rem 0.2rem;
-    min-height: 100px;
+    padding: 1rem 0.25rem;
+    min-height: 115px;
   }
 
   .icon-wrap {
-    width: 2.6rem;
-    height: 2.6rem;
-    font-size: 1.3rem;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
   }
 
   .service-title {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .service-sub {
-    font-size: 0.6rem;
+    font-size: 0.7srem;
   }
 }
 </style>
