@@ -113,7 +113,7 @@
 
 .product-card {
   width: 100%;
-  max-width: 360px; /* بڑی اسکرین پر کارڈز کو زے شاپ جتنا چوڑا لک دینے کے لیے */
+  max-width: 360px; 
   background: #fff;
   border-radius: 8px;
   overflow: hidden;

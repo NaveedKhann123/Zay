@@ -38,7 +38,7 @@
 <style scoped>
 .cat {
   width: 100%;
-  /* FIXED: height ہٹا کر padding دی ہے تاکہ موبائل پر بیک گراؤنڈ خود بڑا ہو سکے */
+ 
   padding: 60px 20px;
   background-color: #ffffff;
 }
@@ -70,10 +70,10 @@
   max-width: 300px; 
 }
 
-/* FIXED: امیج کو ریسپانسو گول دائرے میں رکھنے کے لیے نیا کنٹینر */
+
 .img-container {
   width: 100%;
-  aspect-ratio: 1 / 1; /* یہ تصویر کو ہمیشہ پرفیکٹ چورس/گول رکھے گا */
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -87,7 +87,7 @@
 }
 
 .card:hover .img-container img {
-  transform: scale(1.1); /* اب ہوور پر امیج دائرے کے اندر ہی خوبصورتی سے زوم ہوگی */
+  transform: scale(1.1); 
 }
 
 .card-text {
@@ -112,23 +112,21 @@ button:hover {
   background: #3f8f52;
 }
 
-/* ===================================================
-   MOBILE RESPONSIVE: میڈیا کیوری برائے موبائل فونز
-   =================================================== */
+
 @media (max-width: 768px) {
   .cat {
     padding: 40px 15px;
   }
 
   .grid {
-    flex-direction: column; /* موبائل پر تینوں کارڈز ایک دوسرے کے نیچے آئیں گے */
+    flex-direction: column; 
     align-items: center;
     gap: 40px;
   }
 
   .card {
     width: 100%;
-    max-width: 260px; /* موبائل اسکرین کے حساب سے سائز ایڈجسٹ کیا */
+    max-width: 260px;
   }
 
   .title {

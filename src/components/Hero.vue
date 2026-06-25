@@ -195,9 +195,7 @@ a:hover {
   font-weight: bolder;
 }
 
-/* ===================================================
-   MOBILE RESPONSIVE: میڈیا کیوری برائے موبائل اور ٹیبلٹ
-   =================================================== */
+
 @media (max-width: 991px) {
   .slide-content {
     padding: 40px;
@@ -209,7 +207,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .slide-content {
-    /* FIXED: کمنٹ کی وجہ سے آنے والی مسٹیک کو یہاں کلین کر دیا گیا ہے */
+
     flex-direction: column-reverse; 
     justify-content: center;
     text-align: center;

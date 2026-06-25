@@ -61,7 +61,7 @@
 </template>
 
 <style scoped>
-/* مین فوٹر کنٹینر - ہائٹ فکسڈ کرنے کے بجائے ہم نے ہٹا دی ہے */
+
 .footer {
   width: 100%;
   background-color: #212934;
@@ -99,7 +99,7 @@
 }
 
 .footer-box a:hover {
-  color: #59AB6E; /* ہوور پر نیلا رنگ زے شاپ کے ڈیزائن پر اچھا نہیں لگتا، گرین بیسٹ ہے */
+  color: #59AB6E; 
 }
 
 .contact-item {
@@ -124,7 +124,7 @@
   margin: 10px auto;
 }
 
-/* سوشل میڈیا اور سبسکرائب سیکشن */
+
 .footer-social {
   max-width: 1200px;
   margin: 0 auto;
@@ -184,16 +184,13 @@
   padding: 20px;
   background-color: #1C232C;
   color: #bcbcbc;
-  text-align: center; /* سینٹر الائن موبائل پر بیسٹ لگتا ہے */
+  text-align: center; 
   margin: 0;
 }
 
-/* ===================================================
-   MOBILE RESPONSIVE: میڈیا کیوری برائے موبائل فونز
-   =================================================== */
 @media (max-width: 768px) {
   .zay {
-    flex-direction: column; /* کالمز ایک دوسرے کے نیچے آئیں گے */
+    flex-direction: column; 
     gap: 30px;
     padding: 40px 20px;
   }
@@ -203,7 +200,7 @@
   }
 
   .footer-social {
-    flex-direction: column; /* سوشل لنکس اور ان پٹ باکس اوپر نیچے آئیں گے */
+    flex-direction: column; 
     gap: 25px;
     text-align: center;
     padding: 20px;
@@ -215,7 +212,7 @@
   }
 
   .subscribe input {
-    width: 60%; /* موبائل اسکرین کے مطابق ایڈجسٹ ہوگا */
+    width: 60%; 
     max-width: 220px;
   }
 }

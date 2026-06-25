@@ -81,7 +81,7 @@ const closeMenu = () => {
   width: 100%;
 }
 
-/* ========== HEADER STYLES ========== */
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -170,7 +170,7 @@ const closeMenu = () => {
   background-color: #FFFFFF;
   padding: 10px 70px;
   border-bottom: 1px solid #e9ecef;
-  position: relative; /* Context parent for the absolute menu list */
+  position: relative; 
 }
 
 .logo a {

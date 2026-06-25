@@ -11,12 +11,12 @@
 <style scoped>
 .page-header {
   width: 100%;
-  /* FIXED: ہائٹ فکسڈ کرنے کے بجائے min-height دی ہے اور فلیکس باکس استعمال کیا ہے */
+
   min-height: 250px;
   background-color: #E9EEF5;
   padding: 40px 20px;
   
-  /* اس سے ٹیکسٹ باکس کے بالکل بیچ (Center) میں ائے گا */
+
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -34,93 +34,53 @@
             >
 
           </div>
-
         </div>
-
       </div>
-
-
       <button 
         @click="nextSlide"
         class="carousel-arrow"
       >
         &#10095;
       </button>
-
-
     </div>
-
   </div>
 </template>
 
-
 <script setup>
-
 import {ref, computed, onMounted, onUnmounted} from "vue"
-
-
 const current = ref(0)
-
-
 const itemsPerPage = ref(4)
-
-
-
 const logos = [
-
 {
 src:"/brand_01.png",
 alt:"Levi"
 },
-
 {
 src:"/brand_02.png",
 alt:"Adidas"
 },
-
 {
 src:"/brand_03.png",
 alt:"Nike"
 },
-
 {
 src:"/brand_04.png",
 alt:"H&M"
 },
-
-
-
 ]
-
-
-
 const maxSlides = computed(()=>{
-
 return Math.max(
 logos.length - itemsPerPage.value,
 0
 )
-
 })
-
-
-
 const transformOffset = computed(()=>{
-
 return 100 / itemsPerPage.value
-
 })
-
-
-
-
 
 function nextSlide(){
-
 if(current.value >= maxSlides.value){
-
 current.value = 0
-
 }
 
 else{
